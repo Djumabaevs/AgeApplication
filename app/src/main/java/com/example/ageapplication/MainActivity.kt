@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
             val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
             val theDate = sdf.parse(selectedDate)
+            val selectedDateInMinutes = theDate!!.time/60000
 
                 },
         year, month, day).show()
